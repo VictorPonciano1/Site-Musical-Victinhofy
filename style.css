@@ -1,0 +1,10 @@
+body {
+    background-color: aqua;
+    font: normal 12pt Comic Sans MS;
+}
+header {
+    display: flex;
+}
+header #img {
+    margin-right: 8px;
+}
