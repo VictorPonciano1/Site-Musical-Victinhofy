@@ -44,16 +44,16 @@ $(document).ready(function(){
     */
 
     //SCRIPT DA MÚSICA SECRETA
-    var audio = $("#audioSecreto")[0];
+    var audioS = $("#audioSecreto")[0];
     $("#play").click(function(){
-        audio.play();
+        audioS.play();
     });
     $("#pause").click(function(){
-        audio.pause();
+        audioS.pause();
     });
     $("#stop").click.click(function(){
-        audio.pause();
-        audio.currentTime = 0;
+        audioS.pause();
+        audioS.currentTime = 0;
     });
 
 });
