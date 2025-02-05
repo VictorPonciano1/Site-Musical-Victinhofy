@@ -3,42 +3,42 @@ $(document).ready(function(){
     /*
 
     //MÚSICA 1
-    var audio = $("#audio1")[0];
+    var audio1 = $("#audio1")[0];
     $("#play1").click(function(){
-        audio.play();
+        audio1.play();
     });
     $("#pause1").click(function(){
-        audio.pause();
+        audio1.pause();
     });
     $("#stop1").click.click(function(){
-        audio.pause();
-        audio.currentTime = 0;
+        audio1.pause();
+        audio1.currentTime = 0;
     });
 
     //MÚSICA 2
-    var audio = $("#audio2")[0];
+    var audio2 = $("#audio2")[0];
     $("#play2").click(function(){
-        audio.play();
+        audio2.play();
     });
     $("#pause2").click(function(){
-        audio.pause();
+        audio2.pause();
     });
     $("#stop2").click.click(function(){
-        audio.pause();
-        audio.currentTime = 0;
+        audio2.pause();
+        audio2.currentTime = 0;
     });
 
     //MÚSICA 3
-    var audio = $("#audio3")[0];
+    var audio3 = $("#audio3")[0];
     $("#play3").click(function(){
-        audio.play();
+        audio3.play();
     });
     $("#pause3").click(function(){
-        audio.pause();
+        audio3.pause();
     });
     $("#stop3").click.click(function(){
-        audio.pause();
-        audio.currentTime = 0;
+        audio3.pause();
+        audio3.currentTime = 0;
     });
 
     */
