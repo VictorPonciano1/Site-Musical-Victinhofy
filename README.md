@@ -6,6 +6,8 @@
 
 Este site foi deenvolvido com o propósito de puro entretenimento, sem quaisquer intenções de lucro.
 
+## Aviso
+
 Não possuo nenhum tipo de licença ou direitos sobre as músicas aqui escolhidas, muitas delas por estarem modificadas em coparação à sua versão original entram na questão do "fair use" (uso justo) do YouTube, não configurando roubo de propriedade intelectual.
 
 ## Usabilidade
