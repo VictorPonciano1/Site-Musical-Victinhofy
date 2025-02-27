@@ -10,7 +10,7 @@ Este site foi deenvolvido com o propósito de puro entretenimento, sem quaisquer
 
 Não possuo nenhum tipo de licença ou direitos sobre as músicas aqui escolhidas, muitas delas por estarem modificadas em coparação à sua versão original entram na questão do "fair use" (uso justo) do YouTube, não configurando roubo de propriedade intelectual.
 
-Atesto também que não possuo quaisquer ligações com as empresas e instituições listadas.
+Atesto também que não possuo quaisquer ligações, sejam profissionais, pessoais ou financeiras com as empresas e instituições listadas em "Apoio" e que tudo se trata do uso livre da arte por serem instituições públicas.
 
 ## Usabilidade
 
