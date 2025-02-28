@@ -29,7 +29,7 @@ $(document).ready(function(){
         audio2.currentTime = 0;
     });
 
-    //MÚSICA 3
+    //MÚSICA 3: NINJA LOW TAPER FADE
     var audio3 = $("#audio3")[0];
     $("#play3").click(function(){
         audio3.play();
@@ -44,7 +44,7 @@ $(document).ready(function(){
 
     */
 
-    //SCRIPT DA MÚSICA SECRETA
+    //SCRIPT DA MÚSICA SECRETA: KASINO - CAN'T GET OVER
     var audioS = $("#audioSecreto")[0];
     $("#play").click(function(){
         audioS.play();
