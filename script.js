@@ -3,7 +3,7 @@ $(document).ready(function(){
 
     /*
 
-    //MÚSICA 1
+    //MÚSICA 1: TRIO PARADA DURA - ME MATA DE UMA VEZ
     var audio1 = $("#audio1")[0];
     $("#play1").click(function(){
         audio1.play();
