@@ -9,7 +9,7 @@ header #img {
     margin-right: 8px;
 }
 footer#patrocinio {
-    background: linear-gradient(gray, blue);
+    background: linear-gradient(lightgray, blue);
     align-content: center;
     text-align: center;
 }
