@@ -4,7 +4,7 @@
 
 > Status: Em desenvolvimento ⚠️
 
-Este site foi deenvolvido com o propósito de puro entretenimento, sem quaisquer intenções de lucro.
+Este site foi deenvolvido com o propósito de puro entretenimento, sem quaisquer intenções de lucro, o site funciona sem qualquer forma de exibição de anúncios ou meios monetizáveis.
 
 ## Aviso
 
