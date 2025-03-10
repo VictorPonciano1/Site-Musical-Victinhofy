@@ -44,7 +44,7 @@ $(document).ready(function(){
 
     */
 
-    //SCRIPT DA MÚSICA SECRETA: KASINO - CAN'T GET OVER
+    //SCRIPT DA MÚSICA SECRETA: KASINO - CAN'T GET OVER FT. GILBERTO BARROS
     var audioS = $("#audioSecreto")[0];
     $("#play").click(function(){
         audioS.play();
