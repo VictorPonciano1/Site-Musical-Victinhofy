@@ -11,7 +11,7 @@ $(document).ready(function(){
     $("#pause1").click(function(){
         audio1.pause();
     });
-    $("#stop1").click.click(function(){
+    $("#stop1").click(function(){
         audio1.pause();
         audio1.currentTime = 0;
     });
@@ -24,7 +24,7 @@ $(document).ready(function(){
     $("#pause2").click(function(){
         audio2.pause();
     });
-    $("#stop2").click.click(function(){
+    $("#stop2").click(function(){
         audio2.pause();
         audio2.currentTime = 0;
     });
@@ -39,7 +39,7 @@ $(document).ready(function(){
     $("#pause3").click(function(){
         audio3.pause();
     });
-    $("#stop3").click.click(function(){
+    $("#stop3").click(function(){
         audio3.pause();
         audio3.currentTime = 0;
     });
@@ -52,9 +52,8 @@ $(document).ready(function(){
     $("#pause").click(function(){
         audioS.pause();
     });
-    $("#stop").click.click(function(){
+    $("#stop").click(function(){
         audioS.pause();
         audioS.currentTime = 0;
     });
-
 });
