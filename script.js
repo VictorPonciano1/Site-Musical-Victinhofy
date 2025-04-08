@@ -29,6 +29,8 @@ $(document).ready(function(){
         audio2.currentTime = 0;
     });
 
+    */
+
     //MÚSICA 3: NINJA LOW TAPER FADE
     var audio3 = $("#audio3")[0];
     $("#play3").click(function(){
@@ -41,8 +43,6 @@ $(document).ready(function(){
         audio3.pause();
         audio3.currentTime = 0;
     });
-
-    */
 
     //SCRIPT DA MÚSICA SECRETA: KASINO - CAN'T GET OVER FT. GILBERTO BARROS
     var audioS = $("#audioSecreto")[0];
