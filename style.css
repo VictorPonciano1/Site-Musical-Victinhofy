@@ -1,6 +1,7 @@
 body {
     background-color: aqua;
     font: normal 12pt Comic Sans MS; /*TRANSFORMA TODA A FONTE EM COMIC SANS*/
+    padding: 10px;
 }
 header {
     display: flex;
