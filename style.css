@@ -29,8 +29,8 @@ background-color: lightseagreen;
 }
 /* PARTE DAS DIVS DOS BOTOÔES */
 /* A PARTIR DAQUI TODAS AS MODIFICAÇÕES SÃO PARA O FOOTER */
-hr#linha1 {
-   color: black; 
+hr#linha2 {
+    border: 1px solid black;
 }
 footer#patrocinio {
     background-color: lightseagreen;
