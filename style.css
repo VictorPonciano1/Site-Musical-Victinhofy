@@ -10,6 +10,9 @@ header {
 header #img {
     margin-right: 8px;
 }
+hr#linha1 {
+    border: 1px solid black;
+}
 /* EDITANDO AS DIVS DAS MÚSICAS */
 div#divm1 {
 padding-bottom: 2px;
