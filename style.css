@@ -12,23 +12,19 @@ header #img {
 }
 /* EDITANDO AS DIVS DAS MÚSICAS */
 div#divm1 {
-padding-top: 5x;
-padding-bottom: 5px;
+padding-bottom: 2px;
 background-color: lightseagreen;
 }
 div#divm2 {
-padding-top: 5x;
-padding-bottom: 5px;    
+padding-bottom: 2px;    
 background-color: lightseagreen;
 }
 div#divm3 {
-padding-top: 5x;
-padding-bottom: 5px; 
+padding-bottom: 2px; 
 background-color: lightseagreen;
 }
 div#divms {
-padding-top: 5x;
-padding-bottom: 5px;
+padding-bottom: 2px;
 background-color: lightseagreen;
 }
 /* PARTE DAS DIVS DOS BOTOÔES */
