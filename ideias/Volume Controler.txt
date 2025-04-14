@@ -11,30 +11,49 @@
  }
 
  SCRIPT PARA O VOLUME
- // Controle de volume com slider
+const audios = $('.meuAudio'); // Seleciona todos os elementos de áudio
+
+      // Controle de volume com slider (afeta todos os players de áudio)
       $('#controleVolume').on('input', function() {
         const volume = $(this).val();
-        audio.volume = volume;
 
-        // Se o volume for maior que 0, desmuta automaticamente
-        if (volume > 0 && audio.muted) {
-          audio.muted = false;
-          $('#muteBtn').text('🔊');
-        }
+        // Aplica o volume em todos os áudios
+        audios.each(function() {
+          this.volume = volume;
+        });
 
-        // Se o volume for zero, mostra ícone mudo
+        // Se o volume for zero, todos ficam com mute
         if (volume == 0) {
-          $('#muteBtn').text('🔇');
-        }
-      });
-
-      // Botão mute/unmute
-      $('#muteBtn').click(function() {
-        audio.muted = !audio.muted;
-
-        if (audio.muted) {
+          audios.each(function() {
+            this.muted = true;
+          });
           $('#muteBtn').text('🔇');
         } else {
           $('#muteBtn').text('🔊');
         }
       });
+
+      // Mute/Unmute no clique do botão (afeta todos os players de áudio)
+      $('#muteBtn').click(function() {
+        toggleMute();
+      });
+
+      // Atalho de teclado: tecla "M" (afeta todos os players de áudio)
+      $(document).on('keydown', function(e) {
+        // Ignora se estiver digitando em inputs ou textarea
+        if ($(e.target).is('input, textarea')) return;
+
+        if (e.key.toLowerCase() === 'm') {
+          toggleMute();
+        }
+      });
+
+      // Função que alterna mute/unmute (afeta todos os players de áudio)
+      function toggleMute() {
+        const muteStatus = audios[0].muted; // Checa o estado de mute do primeiro áudio
+        audios.each(function() {
+          this.muted = !muteStatus;
+        });
+
+        $('#muteBtn').text(muteStatus ? '🔊' : '🔇');
+      }
