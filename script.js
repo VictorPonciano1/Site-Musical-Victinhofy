@@ -2,7 +2,6 @@
 $(document).ready(function(){
 
     /*
-
     //MÚSICA 1: TRIO PARADA DURA - ME MATA DE UMA VEZ
     var audio1 = $("#audio1")[0];
     $("#play1").click(function(){
@@ -28,7 +27,6 @@ $(document).ready(function(){
         audio2.pause();
         audio2.currentTime = 0;
     });
-
     */
 
     //MÚSICA 3: NINJA LOW TAPER FADE
@@ -56,4 +54,9 @@ $(document).ready(function(){
         audioS.pause();
         audioS.currentTime = 0;
     });
+
+    /*
+    //CONTROLE DO VOLUME DAS MÚSICAS DA PÁGINA
+    
+    */
 });
