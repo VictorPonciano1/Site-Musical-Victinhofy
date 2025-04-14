@@ -3,9 +3,11 @@
     <input type="range" id="controleVolume" min="0" max="1" step="0.01" value="1">
     <button id="muteBtn">🔊</button> 
  
- 
+ ESTILO DO BOTÃO NO CSS
  #muteBtn {
       font-size: 16px;
       margin-left: 10px;
       cursor: pointer;
  }
+
+ 
