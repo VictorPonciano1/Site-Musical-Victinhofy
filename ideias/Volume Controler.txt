@@ -10,4 +10,31 @@
       cursor: pointer;
  }
 
- 
+ SCRIPT PARA O VOLUME
+ // Controle de volume com slider
+      $('#controleVolume').on('input', function() {
+        const volume = $(this).val();
+        audio.volume = volume;
+
+        // Se o volume for maior que 0, desmuta automaticamente
+        if (volume > 0 && audio.muted) {
+          audio.muted = false;
+          $('#muteBtn').text('🔊');
+        }
+
+        // Se o volume for zero, mostra ícone mudo
+        if (volume == 0) {
+          $('#muteBtn').text('🔇');
+        }
+      });
+
+      // Botão mute/unmute
+      $('#muteBtn').click(function() {
+        audio.muted = !audio.muted;
+
+        if (audio.muted) {
+          $('#muteBtn').text('🔇');
+        } else {
+          $('#muteBtn').text('🔊');
+        }
+      });
