@@ -14,6 +14,7 @@ header #img {
 hr#linha1 {
     border: 1px solid black;
 }
+
 /* EDITANDO AS DIVS DAS MÚSICAS */
 div#divm1 {
 padding-bottom: 2px;
@@ -31,6 +32,7 @@ div#divms {
 padding-bottom: 2px;
 background-color: lightseagreen;
 }
+
 /* PARTE DAS DIVS DOS BOTOÔES */
 
 /* A PARTIR DAQUI TODAS AS MODIFICAÇÕES SÃO PARA O FOOTER */
@@ -42,4 +44,5 @@ footer#patrocinio {
     align-content: center;
     text-align: center;
 }
+
 /* ESTILIZAÇÃO DOS BOTÕES DE AUDIO-VOLUME  */
