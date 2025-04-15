@@ -1,59 +1,92 @@
  ESTE É O CONTROLE DO VOLUME NO HTML:
- <label for="controleVolume">Volume: </label>
-    <input type="range" id="controleVolume" min="0" max="1" step="0.01" value="1">
-    <button id="muteBtn">🔊</button> 
+ <div class="player-container">
+        <!-- Ícone de volume -->
+        <div class="volume-icon">
+            <span id="volume-icon">🔊</span>
+        </div>
+        
+        <!-- Barra de Volume -->
+        <input type="range" id="volume-bar" min="0" max="1" step="0.01" value="1">
+        
+        <!-- Texto indicando o volume atual -->
+        <span id="volume-text">100%</span>
+    </div>
  
  ESTILO DO BOTÃO NO CSS
- #muteBtn {
-      font-size: 16px;
-      margin-left: 10px;
-      cursor: pointer;
- }
+ .player-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
 
+/* Estilo do ícone de volume */
+.volume-icon {
+    font-size: 24px;
+}
+
+/* Estilo da barra de volume */
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 200px;
+    height: 8px;
+    background: #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: background 0.3s;
+}
+
+/* Estilo da barra de volume quando o usuário interage com ela */
+input[type="range"]:hover {
+    background: #aaa;
+}
+
+/* Estilo do controle de volume ao ser movido */
+input[type="range"]::-webkit-slider-runnable-track {
+    background: #4CAF50;
+    border-radius: 5px;
+    height: 8px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    background: #4CAF50;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Estilo do texto de volume */
+#volume-text {
+    font-size: 16px;
+}
  SCRIPT PARA O VOLUME
-const audios = $('.meuAudio'); // Seleciona todos os elementos de áudio
+  const $volumeBar = $('#volume-bar');
+  const $audioPlayer = $('#audio-player')[0]; // jQuery retorna objeto, precisamos do DOM real
+  const $volumeText = $('#volume-text');
+  const $volumeIcon = $('#volume-icon');
 
-      // Controle de volume com slider (afeta todos os players de áudio)
-      $('#controleVolume').on('input', function() {
-        const volume = $(this).val();
+  // Definindo volume inicial
+  $audioPlayer.volume = $volumeBar.val();
 
-        // Aplica o volume em todos os áudios
-        audios.each(function() {
-          this.volume = volume;
-        });
+  // Evento de mudança na barra de volume
+  $volumeBar.on('input change', function () {
+    const volumeValue = parseFloat($(this).val());
+    $audioPlayer.volume = volumeValue;
 
-        // Se o volume for zero, todos ficam com mute
-        if (volume == 0) {
-          audios.each(function() {
-            this.muted = true;
-          });
-          $('#muteBtn').text('🔇');
-        } else {
-          $('#muteBtn').text('🔊');
-        }
-      });
+    // Atualiza o texto com a porcentagem
+    const volumePercent = Math.round(volumeValue * 100);
+    $volumeText.text(`${volumePercent}%`);
 
-      // Mute/Unmute no clique do botão (afeta todos os players de áudio)
-      $('#muteBtn').click(function() {
-        toggleMute();
-      });
-
-      // Atalho de teclado: tecla "M" (afeta todos os players de áudio)
-      $(document).on('keydown', function(e) {
-        // Ignora se estiver digitando em inputs ou textarea
-        if ($(e.target).is('input, textarea')) return;
-
-        if (e.key.toLowerCase() === 'm') {
-          toggleMute();
-        }
-      });
-
-      // Função que alterna mute/unmute (afeta todos os players de áudio)
-      function toggleMute() {
-        const muteStatus = audios[0].muted; // Checa o estado de mute do primeiro áudio
-        audios.each(function() {
-          this.muted = !muteStatus;
-        });
-
-        $('#muteBtn').text(muteStatus ? '🔊' : '🔇');
-      }
+    // Atualiza o ícone de volume
+    if (volumeValue === 0) {
+      $volumeIcon.text('🔇');
+    } else if (volumeValue <= 0.5) {
+      $volumeIcon.text('🔉');
+    } else {
+      $volumeIcon.text('🔊');
+    }
+  });
