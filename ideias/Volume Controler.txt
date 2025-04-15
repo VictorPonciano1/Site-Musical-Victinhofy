@@ -1,4 +1,5 @@
- ESTE É O CONTROLE DO VOLUME NO HTML:
+ -> ESTE É O CONTROLE DO VOLUME NO HTML:
+
  <div class="player-container">
         <!-- Ícone de volume -->
         <div class="volume-icon">
@@ -12,58 +13,87 @@
         <span id="volume-text">100%</span>
     </div>
  
- ESTILO DO BOTÃO NO CSS
- .player-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
+-> ESTILO DA VOLUME BAR NO CSS:
+
+ /* Container do controle de volume */
+.player-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilo do ícone de volume */
+/* Ícone de volume */
 .volume-icon {
-    font-size: 24px;
+  font-size: 24px;
 }
 
-/* Estilo da barra de volume */
-input[type="range"] {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 200px;
-    height: 8px;
-    background: #ddd;
-    border-radius: 5px;
-    outline: none;
-    transition: background 0.3s;
+/* Barra de volume */
+#volume-bar {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 200px;
+  height: 8px;
+  background: #ddd;
+  border-radius: 5px;
+  outline: none;
+  transition: background 0.3s;
+  cursor: pointer;
 }
 
-/* Estilo da barra de volume quando o usuário interage com ela */
-input[type="range"]:hover {
-    background: #aaa;
+/* Hover */
+#volume-bar:hover {
+  background: #bbb;
 }
 
-/* Estilo do controle de volume ao ser movido */
-input[type="range"]::-webkit-slider-runnable-track {
-    background: #4CAF50;
-    border-radius: 5px;
-    height: 8px;
+/* Track (área da barra) */
+#volume-bar::-webkit-slider-runnable-track {
+  height: 8px;
+  // background: #4caf50;
+  border-radius: 5px;
 }
 
-input[type="range"]::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    background: #4CAF50;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    cursor: pointer;
+#volume-bar::-moz-range-track {
+  height: 8px;
+  // background: #4caf50;
+  border-radius: 5px;
 }
 
-/* Estilo do texto de volume */
+/* Thumb (bolinha que arrasta) */
+#volume-bar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  // background: #4caf50;
+  border-radius: 50%;
+  border: none;
+  margin-top: -5px; /* alinha o thumb na track */
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#volume-bar::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  // background: #4caf50;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+/* Texto de volume (ex: "70%") */
 #volume-text {
-    font-size: 16px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
 }
- SCRIPT PARA O VOLUME
+
+ -> SCRIPT PARA O VOLUME:
+
   const $volumeBar = $('#volume-bar');
   const $audioPlayer = $('#audio-player')[0]; // jQuery retorna objeto, precisamos do DOM real
   const $volumeText = $('#volume-text');
