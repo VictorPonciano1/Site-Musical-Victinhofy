@@ -1,6 +1,7 @@
+/* MODIFICAÇÕES DO CORPO DA PÁGINA */
 body {
     background-color: lightskyblue;
-    font: normal 12pt Comic Sans MS; /*TRANSFORMA TODA A FONTE EM COMIC SANS*/
+    font: normal 12pt Comic Sans MS;
     padding: 10px;
     text-align: center;
 }
@@ -31,6 +32,7 @@ padding-bottom: 2px;
 background-color: lightseagreen;
 }
 /* PARTE DAS DIVS DOS BOTOÔES */
+
 /* A PARTIR DAQUI TODAS AS MODIFICAÇÕES SÃO PARA O FOOTER */
 hr#linha2 {
     border: 1px solid black;
@@ -40,3 +42,4 @@ footer#patrocinio {
     align-content: center;
     text-align: center;
 }
+/* ESTILIZAÇÃO DOS BOTÕES DE AUDIO-VOLUME  */
