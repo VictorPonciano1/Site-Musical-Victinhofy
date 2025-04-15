@@ -56,6 +56,7 @@ $(document).ready(function(){
     });
 
     /*
+    
     //CONTROLE DO VOLUME DAS MÚSICAS DA PÁGINA
     
     */
