@@ -36,7 +36,6 @@ background-color: lightseagreen;
 /* PARTE DAS DIVS DOS BOTÔES - BOTÕES */
 button {
 border-radius: 30%;
-
 }
 div#btn1 {
 background-color: aliceblue;
@@ -60,5 +59,3 @@ footer#patrocinio {
     align-content: center;
     text-align: center;
 }
-
-/* ESTILIZAÇÃO DOS BOTÕES DE AUDIO-VOLUME  */
