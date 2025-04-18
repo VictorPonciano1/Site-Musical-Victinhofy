@@ -54,10 +54,4 @@ $(document).ready(function(){
         audioS.pause();
         audioS.currentTime = 0;
     });
-
-    /*
-    
-    //CONTROLE DO VOLUME DAS MÚSICAS DA PÁGINA
-    
-    */
 });
