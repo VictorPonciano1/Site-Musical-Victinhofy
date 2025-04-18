@@ -33,7 +33,11 @@ padding-bottom: 2px;
 background-color: lightseagreen;
 }
 
-/* PARTE DAS DIVS DOS BOTOÔES */
+/* PARTE DAS DIVS DOS BOTÔES - BOTÕES */
+button {
+border-radius: 30%;
+
+}
 div#btn1 {
 background-color: aliceblue;
 }
